@@ -2,6 +2,7 @@
     <html>
         <head>
             <title>FPHS Robotics</title>
+            <link REL="SHORTCUT ICON" HREF="./favicon.ico">
             <script src="./scripts/jquery.min.js"></script>
             <script src="./scripts/jquery.scrolltab.js"></script>
             <script>
@@ -104,6 +105,8 @@
                         <tr>
                             <td><a href="./frc.php">FRC</a></td>
                             <td><a href="./ftc.php">FTC</a></td>
+                            <td><a href="mailto:llandow@fpschools.org">Contact Mentor</a></td>
+                            <td><a href="http://firstteam3781.blogspot.com/">3781 Blog</a></td>
                         </tr>
                     </table>
                 </span>
