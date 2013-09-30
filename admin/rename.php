@@ -27,10 +27,17 @@ rmdirr("$dirname/$entry");
 $dir->close();
 return rmdir($dirname);
 }
- 
+session_start();
+if($_SESSION['tmp_var'] == "downloaded")
+{
 rmdirr("../../RoboticsWebsite");
 //rename the folder
 rename("../../RoboticsWebsite-master", "../../RoboticsWebsite");
 //and, we are done!
 echo "Success! The site should have been updated, but you should go look and make sure.";
+unset($_SESSION['tmp_var']);
+session_destroy();
+}else{
+ echo "ERROR!";
+}
 ?>
