@@ -18,6 +18,8 @@ if ($res === TRUE) {
     //Since we probably don't need the zip anymore,
     //and it is just using space, we will delete it
     unlink("robotics.zip");
+    session_start();
+    $_SESSION['tmp_var'] = "downloaded";
     //Now, we go to a new script to finish the process
     header("Location: rename.php");
 } else {
